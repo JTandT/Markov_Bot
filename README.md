@@ -1,5 +1,7 @@
 # Markov_Bot
 
+This is a clone of 39bit's Markov_Bot program, however this has been modified to randomly respond without a /markov command 1 out of every 30 messages send in a telegram chat.
+
 Generates messages in chats based on Markov chains.
 
 Requires at least Python 3.3.

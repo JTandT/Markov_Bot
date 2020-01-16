@@ -3,7 +3,7 @@ import os.path, pickle, hashlib, logging, time, sys, traceback, random, unicoded
 # minimal Telegram bot library
 SENT = False
 
-T = "API_TOKEN_GOES_HERE"
+T = "API_TOKEN_HERE"
 UA = "A_BROWSER_USER_AGENT_GOES_HERE"
 custom_urlopen = lambda u,**kw:urllib.request.urlopen(urllib.request.Request(u, headers={'User-Agent': UA}),**kw)
 class TelegramBot():
@@ -338,7 +338,8 @@ try:
                     if cmdtarget.lower() != MY_USERNAME:
                         continue
                 cmd = rcmd.lower()
-                if cmd == "/markov" or True: #change to: if cmd != "cmd1" and cmd != "cmd2" ...
+                #if cmd == "/markov":
+                if cmd != "/mlimit" and cmd != "/markovttsspeed" and cmd != "/markovmaxwords" and cmd != "/markovclear" and cmd != "/markovpause" and cmd != "/markovresume" and cmd != "/markovtts" and cmd != "/markovttslang":
                     if t in LAST_USER.keys():
                         if (curtime - LAST_USER[t]) < g[0]:
                             continue

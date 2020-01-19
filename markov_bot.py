@@ -369,6 +369,8 @@ try:
                             if len(msg) > 0: break
                             if tries_o > 1000: break
                         try:
+                            #if message[0] != "/":
+                            #    time.sleep(random.randint(1,4))
                             bot.sendMessage(chat_id=chat_id,
                                 text=msg)
                         except KeyboardInterrupt as e:

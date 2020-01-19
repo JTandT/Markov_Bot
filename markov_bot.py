@@ -3,7 +3,7 @@ import os.path, pickle, hashlib, logging, time, sys, traceback, random, unicoded
 # minimal Telegram bot library
 SENT = False
 
-T = "API_TOKEN_HERE"
+T = "660273854:AAHjRb8f_11KXT5eBakFqULXI3xiX48mvq8"
 UA = "A_BROWSER_USER_AGENT_GOES_HERE"
 custom_urlopen = lambda u,**kw:urllib.request.urlopen(urllib.request.Request(u, headers={'User-Agent': UA}),**kw)
 class TelegramBot():
@@ -608,7 +608,7 @@ try:
                             text="[Language set]",
                             reply_to_message_id=replyto)
                     g[1] = v
-            elif message[0] != "/":
+            if message[0] != "/":
                 if g[3]:
                     if SPLIT_LINES:
                         for line in message.split("\n"):

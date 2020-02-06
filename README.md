@@ -1,4 +1,4 @@
-For a completely rebuilt and more efficient Telegram markov bot, see: https://gitlab.com/mikesbytes/telegram-markov-bot
+For a completely rebuilt and more efficient Telegram markov bot with more features, see: https://gitlab.com/mikesbytes/telegram-markov-bot
 
 # Markov_Chatbot
 
